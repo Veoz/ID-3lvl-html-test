@@ -1,0 +1,23 @@
+{
+  "name": "lvl2",
+  "description": "app/libs/",
+  "main": "index.js",
+  "authors": [
+    "Veoz <VEoz.id@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Veoz/Mlvl-html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^3.5.1"
+  },
+  "dependencies": {
+    "slick-carousel": "^1.8.1"
+  }
+}

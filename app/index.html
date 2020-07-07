@@ -6,10 +6,45 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="libs/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="libs/slick-carousel/slick/slick-theme.css"/>
     <title>Document</title>
 </head>
 <body>
 
+    <section class="modal">
+        <div class="feedback">
+            <div class="exit">
+                <div class="x">
+                    <img class="x" id="x" src="img/x.png" alt="exit">
+                </div>
+            </div>
+            <form action="post" class="mail" id="first_form ">
+                <p class="title">Обратная связь</p>
+                <div class="input">
+                    <div class="item" >
+                        <p>Ваше имя *</p>
+                        <input type="text" required id="name">
+                    </div>
+                    <div class="item">
+                        <p>Телефон *</p>
+                        <input type="text" required id="tell">
+                    </div>
+                    <div class="item">
+                        <p>Email *</p>
+                        <input type="email" required id="email">
+                    </div>
+                </div>
+                <div class="items">
+                    <p>Сообщение</p>
+                    <textarea class="message" required id="message" ></textarea>
+                </div>
+                <div class="button">
+                    <button id="send">ОТПРАВИТЬ</button>
+                </div>
+            </form>
+        </div>
+    </section>
     <header>
         <div class="container">
             <div class="logo">
@@ -18,6 +53,7 @@
             <div class="tell">
                 <p>+7(499) 777-77-77</p>
                 <p>+7(499) 777-77-77</p>
+                <span class="feedback-link">Обратная связь</span>
             </div>
         </div>
     </header>
@@ -35,32 +71,162 @@
         </div>
     </nav>
     <section class="slider">
-        <div class="img">
-            <img src="img/slider-r.png" alt="slider picture">
+        <div class="sliders">
+            <div class="img">
+                <img src="img/slide1.png" alt="slider picture">
+            </div>
+            <div class="img">
+                <img src="img/slide2.png" alt="slider picture">
+            </div>
+        </div>
+        <div class="slider-nav">
+            <img src="img/left-arr.png" alt="left arrow" class="prev">
+            <img src="img/right-arr.png" alt="left arrow" class="next">
+        </div>
+
+
+
+    </section>
+    <section class="breadcrumbs">
+        <div class="container">
+            <div class="breadcrumbs">
+                <ul class="nav-link">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Бытовая техника</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+    <section class="catalog">
+        <div class="container">
+            <div class="catalog-list">
+                <div class="item">
+                    <p><a href="#">Автомобили</a></p>
+                    <ul class="tec">
+                        <li><a href="#">Микроволновки</a></li>
+                        <li><a href="#">Холодильники</a></li>
+                        <li><a href="#">Посудомоечные машины</a></li>
+                        <li><a href="#">Чайники</a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <p><a href="#">Бытовая техника</a></p>
+                    <ul class="tec">
+                        <li><a href="#">Микроволновки</a></li>
+                        <li><a href="#">Холодильники</a></li>
+                        <li><a href="#">Посудомоечные машины</a></li>
+                        <li><a href="#">Чайники</a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <p><a href="#">Мобильная техника</a></p>
+                    <ul class="tec">
+                        <li><a href="#">Микроволновки</a></li>
+                        <li><a href="#">Холодильники</a></li>
+                        <li><a href="#">Посудомоечные машины</a></li>
+                        <li><a href="#">Чайники</a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <p><a href="#">Одежда</a></p>
+                    <ul class="tec">
+                        <li><a href="#">Микроволновки</a></li>
+                        <li><a href="#">Холодильники</a></li>
+                        <li><a href="#">Посудомоечные машины</a></li>
+                        <li><a href="#">Чайники</a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <p><a href="#">Недвижимость</a></p>
+                    <ul class="tec">
+                        <li><a href="#">Микроволновки</a></li>
+                        <li><a href="#">Холодильники</a></li>
+                        <li><a href="#">Посудомоечные машины</a></li>
+                        <li><a href="#">Чайники</a></li>
+                    </ul>
+                </div>
+                <div class="excel">
+                    <div class="item-ex">
+                        <img src="img/excel.png" alt="M.S. excel logo">
+                        <a href="#">Прайс-лист</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="img/nophoto.png" alt="product picture" class="product">
+                    <p class="description">Самый клевый чайник, который надо купить!</p>
+                    <div class="do">
+                        <p class="price">1 900 p.</p>
+                        <img src="img/addtobasket_mini.png" alt="add to basket" class="add">
+                    </div>
+
+                </div>
+                <div class="product-item">
+                    <img src="img/nophoto.png" alt="product picture" class="product">
+                    <p class="description">Самый клевый чайник, который надо купить!</p>
+                    <div class="do">
+                        <p class="price">1 900 p.</p>
+                        <img src="img/addtobasket_mini.png" alt="add to basket" class="add">
+                    </div>
+
+                </div>
+                <div class="product-item">
+                    <img src="img/nophoto.png" alt="product picture" class="product">
+                    <p class="description">Самый клевый чайник, который надо купить!</p>
+                    <div class="do">
+                        <p class="price">1 900 p.</p>
+                        <img src="img/addtobasket_mini.png" alt="add to basket" class="add">
+                    </div>
+
+                </div>
+                <div class="product-item">
+                    <img src="img/nophoto.png" alt="product picture" class="product">
+                    <p class="description">Самый клевый чайник, который надо купить!</p>
+                    <div class="do">
+                        <p class="price">1 900 p.</p>
+                        <img src="img/addtobasket_mini.png" alt="add to basket" class="add">
+                    </div>
+
+                </div>
+                <div class="product-item">
+                    <img src="img/nophoto.png" alt="product picture" class="product">
+                    <p class="description">Самый клевый чайник, который надо купить!</p>
+                    <div class="do">
+                        <p class="price">1 900 p.</p>
+                        <img src="img/addtobasket_mini.png" alt="add to basket" class="add">
+                    </div>
+
+                </div>
+                <div class="page">
+                    <ul class="page-list">
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li class="active"><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr />
         </div>
     </section>
-    <section class="content">
+    <section class="about">
         <div class="container">
-            <div class="news">
-                <h2>Новости</h2>
-                <div class="list">
-                    <p>14 <i>сентября</i> 2013 г.<br /> Редизайн веб-сайта архитектурного бюро.	</p>
-                    <p>14 <i>сентября</i> 2013 г.<br /> Раскрутка интернет-магазина декоративных стикеров и виниловых наклеек.	</p>
-                    <p>14 <i>сентября</i> 2013 г.<br /> SEO-продвижение сайта поставщика дизель генераторов.</p>
-                    <p>14 <i>сентября</i> 2013 г.<br /> Поисковое продвижение веб-сайта поставщика гидрооборудования.</p>
-                </div>
-                <div class="archive">
-                    <a href="#">Архив новостей</a>
-                </div>
+            <div class="wrap">
+                <div class="company">
+                <p>Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали участие в разработке более чем 700 сайтов, поэтому можем уверенно называть себя профессионалами. На данный момент наш коллектив состоит из более чем 30 сотрудников работающих в двух офисах в Москве и Зеленограде.характерные для этого жанра мотивы: неразделённой любви, ухода молодости, угасания души. </p>
             </div>
-            <div class="cv">
-                <div class="about">
-                    <h1>Компания «Пиксель Плюс»</h1>
-                    <p>Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали участие в разработке более чем 700 сайтов, поэтому можем уверенно называть себя профессионалами. На данный момент наш коллектив состоит из более чем 30 сотрудников работающих в двух офисах в Москве и Зеленограде.</p>
+                <div class="targets">
                     <p>Одним из основных направлений работ нашей компании является поисковое продвижение сайтов, на данной момент мы работаем с более чем 150 постоянными клиентами по более чем 11 000 поисковым запросам. При этом в работе основной акцент мы делаем на качестве работ, а так же применяем собственные уникальные разработки в области SEO продвижения. На данный момент отдел SEO состоит из 9 человек под руководством ведущего специалиста, преимущественно работающих в нашем московском офисе.</p>
-                    <p>Наша компания является золотым сертифицированным партнёром «1С-Битрикс» (сертификат № 33939 с 2007 по 2013), что ещё раз подтверждает квалификацию наших сотрудников. В январе 2013 мы стали лидерами продаж продуктов «1С-Битрикс» и вошли в число лучших разработчиков сайтов России. Все специалисты занимающиеся изготовлением сайтов проходят обязательную сертификацию «1С-Битрикс» в течении первых 6 месяцев работы в компании, после чего продолжают непрерывно поддерживать и развивать свои профессиональные навыки.</p>
                 </div>
             </div>
+
         </div>
     </section>
     <footer>
@@ -83,5 +249,15 @@
             </div>
         </div>
     </footer>
+
+    <script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="libs/slick-carousel/slick/slick.min.js"></script>
+    <script type="text/javascript" src="slick.js"></script>
+    <script type="text/javascript" src="validate.js"></script>
+    <script type="text/javascript" src="feedback.js"></script>
+
+    <script>
+            // тут має бути Же Ес
+    </script>
 </body>
 </html>
