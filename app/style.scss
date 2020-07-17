@@ -61,13 +61,13 @@ section.modal.active{
   font-weight: bold;
 
     form.mail {
-      color:$modal-color;
+      color:$gray;
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 466px;
       height: 578px;
-      background-color: #ffffff;
+      background-color: $white;
       div.items{
       p{
         margin: 10px;
@@ -77,7 +77,7 @@ section.modal.active{
       }
       p.title{
         margin: 22px;
-        color: $modal-color ;
+        color: $gray ;
         font-size: 24px;
         font-weight: bold;
         text-transform: uppercase;
@@ -96,13 +96,9 @@ section.modal.active{
             width: 339px;
             height: 40px;
             border: 1px solid #c3c3c3;
-            background-color: #ffffff;
+            background-color: $white;
             padding: 15px;
           }
-          //&:active{
-          //  border: 1px solid #c3c3c3;
-          //  background-color: #ffffff;
-          //}
           .error{
            border: 1px solid  #fbadad;
            &::placeholder {
@@ -113,7 +109,7 @@ section.modal.active{
           }
           .not_error{
             border: 1px solid #c3c3c3!important;
-            background-color: #ffffff!important;
+            background-color: $white!important;
             box-shadow: none;
           }
       }
@@ -123,7 +119,7 @@ section.modal.active{
       width: 339px;
       height: 140px;
       border: 1px solid #c3c3c3;
-      background-color: #ffffff;
+      background-color: $white;
       resize: none;
       padding: 15px;
       &.message.error{
@@ -136,7 +132,7 @@ section.modal.active{
       }
       &.message.error.not_error{
         border: 1px solid #c3c3c3!important;
-        background-color: #ffffff!important;
+        background-color: $white!important;
         box-shadow: none;
       }
     }
@@ -145,8 +141,8 @@ section.modal.active{
         width: 128px;
         height: 42px;
         margin: 22px;
-        background: $modal-bg-bt;
-        color: #ffffff;
+        background: $light-gray;
+        color: $white;
         font-size: 20px;
         font-weight: 700;
         text-transform: uppercase;
@@ -160,7 +156,7 @@ section.modal.active{
 
 header{
   min-width: 1000px;
-  background: $header-bg;
+  background: $white;
   height: 230px;
   div.container{
     position: relative;
@@ -183,7 +179,7 @@ header{
       letter-spacing: 1px;
       font-size: 40px;
       font-family: 'Open Sans Condensed', sans-serif;
-      color: $header-color;
+      color: $mare-light-gray;
     }
     span.feedback-link{
       position: absolute;
@@ -192,9 +188,9 @@ header{
       letter-spacing: 0.6px;
       font-weight: bold;
       margin-top: 9px;
-      color: $header-color;
+      color: $mare-light-gray;
       text-decoration: none;
-      border-bottom: 1px dashed $header-color;
+      border-bottom: 1px dashed $mare-light-gray;
       &:hover{
         cursor: pointer;
       }
@@ -204,7 +200,7 @@ header{
 
 nav{
   min-width: 1000px;
-  background: $nav-bg;
+  background: $light-gray;
   min-height: 80px;
   div.container{
     div.list{
@@ -223,7 +219,7 @@ nav{
             content: '|';
             font-size: 35px;
             padding: 0 0 0 20px;
-            color: $nav-color;
+            color: $white;
           }
           &:last-child:after{
             display: none;
@@ -231,11 +227,11 @@ nav{
           a{
 
             text-decoration: none;
-            color: $nav-color;
+            color: $white;
             line-height: 22px;
             &:hover{
 
-              border-bottom: 2px solid $nav-color;
+              border-bottom: 2px solid $white;
             }
 
           }
@@ -282,10 +278,10 @@ section.breadcrumbs{
         &:after{
           margin-left: 5px;
           content: '/';
-          color: $breadcrumbs;
+          color: $mare-light-gray;
         }
         a{
-          color: $breadcrumbs;
+          color: $mare-light-gray;
         }
       }
     }
@@ -303,14 +299,14 @@ section.catalog{
         margin: 10px 0;
         max-width: 178px;
         min-height: 508px;
-        color: $catalog-color;
+        color: $mare-light-gray;
 
         a{
           letter-spacing: 0.45px;
           text-decoration: none;
-          color: $catalog-color;
+          color: $mare-light-gray;
           &:hover{
-            color: $catalog-active-color;
+            color: $black;
             text-decoration: underline;
           }
         }
@@ -318,7 +314,7 @@ section.catalog{
           p{
             a{
               font-size: 18px;
-              color: $catalog-color;
+              color: $mare-light-gray;
             }
           }
           ul{
@@ -346,7 +342,7 @@ section.catalog{
               margin: 0 33px;
             }
             a{
-              color:$excel-color;
+              color:$black;
               text-decoration: none;
               font-size: 30px;
               font-weight: bold;
@@ -378,7 +374,7 @@ section.catalog{
           }
           p.description{
             margin: 0 42px 15px 20px;
-            color:$product-dec-color;
+            color:$mare-light-gray;
             font-size: 18px;
           }
           div.do{
@@ -389,7 +385,7 @@ section.catalog{
               margin: 0 0 14px 18px;
               font-size: 28px;
               font-weight: 700;
-              color:$product-price-color;
+              color:$dark-gray;
             }
             img.add{
               width: 28px;
@@ -412,7 +408,7 @@ section.catalog{
           a{
             font-size: 20px;
             font-weight: bold;
-            color: $catalog-page-active-color;
+            color: $dark-gray;
           }
         }
         li{
@@ -421,11 +417,11 @@ section.catalog{
 
           a{
             text-decoration: none;
-            color: $catalog-page-color;
+            color: $mare-light-gray;
             font-size: 14px;
             margin: 7px;
             &:hover{
-              color: $catalog-page-active-color;
+              color: $dark-gray;
             }
           }
         }
@@ -438,7 +434,7 @@ section.catalog{
         width: 780px;
         bottom: 0;
         right: 10px;
-        background: $catalog-hr-color;
+        background: $light-gray;
         margin: 2px 0 28px;
 
       }
@@ -464,7 +460,7 @@ section.about{
         margin: 0 0 20px;
 
         p{
-          color: $about-color;
+          color: $mare-light-gray;
           letter-spacing: 0.35px;
           width: 370px;
         }
@@ -486,14 +482,14 @@ footer{
   padding: 50px 0 5px;
   min-width: 1000px;
   min-height: 165px;
-  background: $footer-bg;
+  background: $mare-light-gray;
   div.container{
     display: flex;
     justify-content: space-between;
 
-    color:$footer-color;
+    color:$white;
     a{
-      color:$footer-color;
+      color:$white;
 
     }
     div.copy{
@@ -509,7 +505,7 @@ footer{
 
           a{
             text-decoration: none;
-            border-bottom: 1px solid $footer-color;
+            border-bottom: 1px solid $white;
           }
         }
       }
