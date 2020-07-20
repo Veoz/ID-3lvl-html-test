@@ -1,19 +1,20 @@
-@media screen and (max-width: 1248px){
-  section.slider{
+@media screen and (max-width: 1248px) {
+  section.slider {
 
-      div.img{
-        img{
-          display: none;
-        }
+    div.img {
+      img {
+        display: none;
       }
-    div.slider-nav{
+    }
+
+    div.slider-nav {
       display: none;
     }
 
 
   }
-  section.content{
-     margin: 20px 0 0!important;
+  section.content {
+    margin: 20px 0 0 !important;
   }
 }
 
